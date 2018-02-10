@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <type name="\Magento\Config\Model\Config\Structure\Element\Group">
+        <plugin name="ugoraffaele_trackinglink" type="UgoRaffaele\TrackingLink\Plugin\Config\Model\Config\Structure\Element\Group" />
+    </type>		
+    <type name="\Magento\Email\Model\Template\Filter">
+        <plugin name="ugoraffaele_trackinglink" type="UgoRaffaele\TrackingLink\Plugin\Email\Model\Template\Filter" />
+    </type>
+    <type name="UgoRaffaele\TrackingLink\Plugin\Email\Model\Template\Filter">
+        <arguments>
+            <argument name="class" xsi:type="string">UgoRaffaele\TrackingLink\Block\Sales\Email\Shipment\Track</argument>
+            <argument name="template" xsi:type="string">UgoRaffaele_TrackingLink::email/shipment/track.phtml</argument>
+        </arguments>
+    </type>
+</config>

@@ -1,0 +1,30 @@
+<?php $shipment = $block->getShipment(); ?>
+<?php $order = $block->getOrder(); ?>
+<?php if ($shipment && $order && $shipment->getAllTracks()): ?>
+	<br />
+	<table class="shipment-track">
+		<thead>
+			<tr>
+				<th><?php /* @escapeNotVerified */ echo __('Shipped By'); ?></th>
+				<th><?php /* @escapeNotVerified */ echo __('Tracking Number'); ?></th>
+			</tr>
+		</thead>
+		<tbody>		
+			<?php foreach ($shipment->getAllTracks() as $item): ?>
+				<tr>
+					<td><?php echo $block->escapeHtml($item->getTitle()); ?>:</td>
+					<td>
+						<?php $url = $block->getTrackingUrl($item); ?>
+						<?php if ($url): ?>
+							<a href="<?php echo $block->escapeHtml($url); ?>" target="_blank" rel="nofollow noopener">
+								<?php echo $block->escapeHtml($item->getNumber()); ?>
+							</a>
+						<?php else: ?>
+							<?php echo $block->escapeHtml($item->getNumber()); ?>
+						<?php endif ?>
+					</td>
+				</tr>
+			<?php endforeach; ?>
+		</tbody>
+	</table>
+<?php endif; ?>

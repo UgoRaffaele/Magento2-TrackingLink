@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+		<tab id="ugoraffaele" translate="label" sortOrder="100">
+            <label>UgoRaffaele</label>
+        </tab>
+		<section id="trackinglink" translate="label" sortOrder="160" showInDefault="1" showInWebsite="1" showInStore="1">
+			<class>separator-top</class>
+			<label>Tracking Link</label>
+			<tab>ugoraffaele</tab>
+			<resource>UgoRaffaele_TrackingLink::general</resource>
+			<group id="service_url" translate="label" type="text" sortOrder="100" showInDefault="1" showInWebsite="0" showInStore="0">
+                <label>Service URLs</label>
+                <field id="dhl" translate="label" type="text" sortOrder="200" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>DHL</label>
+                </field>
+                <field id="fedex" translate="label" type="text" sortOrder="300" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Federal Express</label>
+                </field>
+                <field id="ups" translate="label" type="text" sortOrder="400" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>United Parcel Service</label>
+                </field>
+                <field id="usps" translate="label" type="text" sortOrder="500" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>United States Postal Service</label>
+                </field>				
+            </group>
+        </section>
+    </system>
+</config>
