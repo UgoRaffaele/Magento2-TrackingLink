@@ -11,7 +11,7 @@ TrackingLink adds custom link tag to the tracking code shown in transactional em
 
 ```shell
 # You must be in Magento root directory
-composer require ugoraffaele/module-tracking-link
+composer require ugoraffaele/module-trackinglink
 php bin/magento cache:clean
 php bin/magento module:enable UgoRaffaele_TrackingLink
 php bin/magento setup:upgrade
