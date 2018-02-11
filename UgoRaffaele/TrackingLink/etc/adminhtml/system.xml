@@ -1,9 +1,9 @@
 <?xml version="1.0"?>
 <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
-    <system>
+	<system>
 		<tab id="ugoraffaele" translate="label" sortOrder="100">
-            <label>UgoRaffaele</label>
-        </tab>
+			<label>UgoRaffaele</label>
+		</tab>
 		<section id="trackinglink" translate="label" sortOrder="160" showInDefault="1" showInWebsite="1" showInStore="1">
 			<class>separator-top</class>
 			<label>Tracking Link</label>
@@ -32,7 +32,7 @@
 				<field id="freeshipping" translate="label" type="text" sortOrder="800" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
 					<label>Free Shipping Generic Service</label>
 				</field>
-            </group>
-        </section>
-    </system>
+			</group>
+		</section>
+	</system>
 </config>
