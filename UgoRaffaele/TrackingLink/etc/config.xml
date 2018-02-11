@@ -7,6 +7,9 @@
 				<fedex><![CDATA[https://www.fedex.com/apps/fedextrack/?action=track&action=track&tracknumbers={{number}}]]></fedex>
 				<ups><![CDATA[https://tools.usps.com/go/TrackConfirmAction_input?qtc_tLabels1={{number}}]]></ups>
 				<usps><![CDATA[https://wwwapps.ups.com/WebTracking/track?track=yes&trackNums={{number}}]]></usps>
+				<flatrate><![CDATA[https://track.aftership.com/{{number}}]]></flatrate>
+				<tablerate><![CDATA[https://track.aftership.com/{{number}}]]></tablerate>
+				<freeshipping><![CDATA[https://track.aftership.com/{{number}}]]></freeshipping>
             </service_url>
         </trackinglink>
     </default>
